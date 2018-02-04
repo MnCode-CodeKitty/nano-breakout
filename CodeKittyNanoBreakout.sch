@@ -105,7 +105,7 @@ U 1 1 597FBD6D
 P 6675 1650
 F 0 "R2" V 6755 1650 50  0000 C CNN
 F 1 "R" V 6675 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6605 1650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6605 1650 50  0001 C CNN
 F 3 "" H 6675 1650 50  0000 C CNN
 	1    6675 1650
 	0    -1   -1   0   
@@ -154,22 +154,9 @@ Text Notes 1175 1050 0    197  ~ 0
 POWER
 Text GLabel 2550 1675 2    39   Input ~ 0
 VCC
-$Comp
-L CONN_01X02 P5
-U 1 1 597FDB7A
-P 8475 1350
-F 0 "P5" H 8475 1500 50  0000 C CNN
-F 1 "CONN_01X02" V 8575 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8475 1350 50  0001 C CNN
-F 3 "" H 8475 1350 50  0000 C CNN
-	1    8475 1350
-	0    -1   -1   0   
-$EndComp
-Text GLabel 8425 1550 3    39   Input ~ 0
+Text GLabel 8750 3175 0    39   Input ~ 0
 GND
-Text GLabel 8900 1675 2    39   Input ~ 0
-BUZZ
-Text Notes 7875 1125 0    197  ~ 0
+Text Notes 8225 875  0    197  ~ 0
 SPEAKER
 $Comp
 L LED D1
@@ -188,7 +175,7 @@ U 1 1 597FE2C9
 P 1950 3800
 F 0 "R1" V 2030 3800 50  0000 C CNN
 F 1 "R" V 1950 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 1880 3800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1880 3800 50  0001 C CNN
 F 3 "" H 1950 3800 50  0000 C CNN
 	1    1950 3800
 	1    0    0    -1  
@@ -201,10 +188,6 @@ Wire Wire Line
 	1950 3650 1950 3525
 Wire Wire Line
 	1950 3525 1850 3525
-Wire Wire Line
-	8525 1675 8900 1675
-Wire Wire Line
-	8525 1675 8525 1550
 Text GLabel 1575 1575 3    39   Input ~ 0
 GND
 $Comp
@@ -234,17 +217,17 @@ $EndComp
 $Comp
 L SPEAKER SP1
 U 1 1 59DC25FB
-P 8925 2350
-F 0 "SP1" H 8825 2600 50  0000 C CNN
-F 1 "SPEAKER" H 8825 2100 50  0000 C CNN
-F 2 "DM_Custom:DM_PiezSMD_PMKCS0909E4000-R1" H 8925 2350 50  0001 C CNN
-F 3 "" H 8925 2350 50  0000 C CNN
-	1    8925 2350
+P 9975 1550
+F 0 "SP1" H 9875 1800 50  0000 C CNN
+F 1 "PIEZO" H 9875 1300 50  0000 C CNN
+F 2 "DM_Custom:DM_PiezSMD_PMKCS0909E4000-R1" H 9975 1550 50  0001 C CNN
+F 3 "" H 9975 1550 50  0000 C CNN
+	1    9975 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 8625 2250 0    39   Input ~ 0
+Text GLabel 8450 2100 0    39   Input ~ 0
 BUZZ
-Text GLabel 8625 2450 0    39   Input ~ 0
+Text GLabel 8450 2450 0    39   Input ~ 0
 GND
 $Comp
 L SW_PUSH_SMALL_H SW1
@@ -263,4 +246,84 @@ Text GLabel 1525 2475 0    39   Input ~ 0
 RST
 Text GLabel 1825 2475 2    39   Input ~ 0
 GND
+$Comp
+L CONN_01X03 P5
+U 1 1 59FFB57F
+P 8950 3275
+F 0 "P5" H 8950 3475 50  0000 C CNN
+F 1 "CONN_01X03" V 9050 3275 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8950 3275 50  0001 C CNN
+F 3 "" H 8950 3275 50  0000 C CNN
+	1    8950 3275
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 3275 0    39   Input ~ 0
+5V
+Text GLabel 8750 3375 0    39   Input ~ 0
+SENS
+Text GLabel 4750 3100 2    39   Input ~ 0
+SENS
+Text Notes 7925 2950 0    197  ~ 0
+SENSORS
+Text GLabel 8425 1300 0    39   Input ~ 0
+VCC
+$Comp
+L D D2
+U 1 1 5A0CCEA3
+P 9150 1650
+F 0 "D2" H 9150 1750 50  0000 C CNN
+F 1 "D" H 9150 1550 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 9150 1650 50  0001 C CNN
+F 3 "" H 9150 1650 50  0000 C CNN
+	1    9150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A0CD00D
+P 8875 2100
+F 0 "R4" V 8955 2100 50  0000 C CNN
+F 1 "1K" V 8875 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8805 2100 50  0001 C CNN
+F 3 "" H 8875 2100 50  0000 C CNN
+	1    8875 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L MMBT3904 Q1
+U 1 1 5A0CD092
+P 9325 2100
+F 0 "Q1" H 9525 2175 50  0000 L CNN
+F 1 "MMBT3904" H 9525 2100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9525 2025 50  0000 L CIN
+F 3 "" H 9325 2100 50  0000 L CNN
+	1    9325 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2450 9425 2450
+Wire Wire Line
+	9425 2450 9425 2300
+Wire Wire Line
+	9025 2100 9125 2100
+Wire Wire Line
+	8450 2100 8725 2100
+Wire Wire Line
+	9675 1650 9300 1650
+Wire Wire Line
+	9425 1900 9425 1650
+Connection ~ 9425 1650
+Wire Wire Line
+	8675 1650 9000 1650
+Wire Wire Line
+	8675 1325 8675 1650
+Wire Wire Line
+	8675 1325 9675 1325
+Wire Wire Line
+	9675 1325 9675 1450
+Wire Wire Line
+	8425 1300 9275 1300
+Wire Wire Line
+	9275 1300 9275 1325
+Connection ~ 9275 1325
 $EndSCHEMATC
