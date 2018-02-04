@@ -1,4 +1,3 @@
-update=12/6/2017 9:39:55 AM
 update=2/3/2018 7:21:03 PM
 version=1
 last_client=kicad
