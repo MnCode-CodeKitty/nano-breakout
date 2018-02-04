@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 31)
@@ -1100,7 +1100,7 @@
   (gr_line (start 209.8675 84.3915) (end 209.8675 82.931) (layer F.SilkS) (width 0.2))
   (gr_line (start 210.6295 83.6295) (end 209.8675 84.3915) (layer F.SilkS) (width 0.2))
   (gr_line (start 210.6295 82.931) (end 210.6295 84.328) (layer F.SilkS) (width 0.2))
-  (gr_text "CodeKitty  v1.01 CK020318" (at 205.6384 124.6632) (layer F.Mask)
+  (gr_text "CodeKitty  v1.02 CK020318" (at 205.6384 124.6632) (layer F.Mask)
     (effects (font (size 1 0.8) (thickness 0.15)))
   )
   (gr_line (start 202.2348 113.8936) (end 201.422 113.1316) (layer F.SilkS) (width 0.2))
