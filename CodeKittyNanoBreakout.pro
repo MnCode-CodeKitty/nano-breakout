@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
 update=12/6/2017 9:39:55 AM
 =======
-update=12/3/2017 8:04:01 PM
+update=2/3/2018 7:21:03 PM
 >>>>>>> Stashed changes
 version=1
 last_client=kicad
@@ -27,8 +27,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -64,3 +62,5 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=C:/Users/dylan/Documents/PCBs/DM_Custom
+[general]
+version=1
