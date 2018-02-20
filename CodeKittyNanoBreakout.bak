@@ -279,17 +279,6 @@ F 3 "" H 9150 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
-U 1 1 5A0CCF8E
-P 8675 1475
-F 0 "R3" V 8755 1475 50  0000 C CNN
-F 1 "1K" V 8675 1475 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8605 1475 50  0001 C CNN
-F 3 "" H 8675 1475 50  0000 C CNN
-	1    8675 1475
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R4
 U 1 1 5A0CD00D
 P 8875 2100
@@ -325,9 +314,9 @@ Wire Wire Line
 	9425 1900 9425 1650
 Connection ~ 9425 1650
 Wire Wire Line
-	9000 1650 8675 1650
+	8675 1650 9000 1650
 Wire Wire Line
-	8675 1650 8675 1625
+	8675 1325 8675 1650
 Wire Wire Line
 	8675 1325 9675 1325
 Wire Wire Line

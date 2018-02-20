@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:CodeKittyNanoBreakout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -225,9 +226,9 @@ F 3 "" H 9975 1550 50  0000 C CNN
 	1    9975 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 8450 2100 0    39   Input ~ 0
+Text GLabel 8700 1450 0    39   Input ~ 0
 BUZZ
-Text GLabel 8450 2450 0    39   Input ~ 0
+Text GLabel 8700 1800 0    39   Input ~ 0
 GND
 $Comp
 L SW_PUSH_SMALL_H SW1
@@ -265,65 +266,23 @@ Text GLabel 4750 3100 2    39   Input ~ 0
 SENS
 Text Notes 7925 2950 0    197  ~ 0
 SENSORS
-Text GLabel 8425 1300 0    39   Input ~ 0
-VCC
-$Comp
-L D D2
-U 1 1 5A0CCEA3
-P 9150 1650
-F 0 "D2" H 9150 1750 50  0000 C CNN
-F 1 "D" H 9150 1550 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 9150 1650 50  0001 C CNN
-F 3 "" H 9150 1650 50  0000 C CNN
-	1    9150 1650
-	1    0    0    -1  
-$EndComp
 $Comp
 L R R4
 U 1 1 5A0CD00D
-P 8875 2100
-F 0 "R4" V 8955 2100 50  0000 C CNN
-F 1 "1K" V 8875 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8805 2100 50  0001 C CNN
-F 3 "" H 8875 2100 50  0000 C CNN
-	1    8875 2100
+P 9125 1450
+F 0 "R4" V 9205 1450 50  0000 C CNN
+F 1 "1K" V 9125 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9055 1450 50  0001 C CNN
+F 3 "" H 9125 1450 50  0000 C CNN
+	1    9125 1450
 	0    1    1    0   
 $EndComp
-$Comp
-L MMBT3904 Q1
-U 1 1 5A0CD092
-P 9325 2100
-F 0 "Q1" H 9525 2175 50  0000 L CNN
-F 1 "MMBT3904" H 9525 2100 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9525 2025 50  0000 L CIN
-F 3 "" H 9325 2100 50  0000 L CNN
-	1    9325 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8450 2450 9425 2450
+	8700 1800 9675 1800
 Wire Wire Line
-	9425 2450 9425 2300
+	9675 1800 9675 1650
 Wire Wire Line
-	9025 2100 9125 2100
+	9275 1450 9675 1450
 Wire Wire Line
-	8450 2100 8725 2100
-Wire Wire Line
-	9675 1650 9300 1650
-Wire Wire Line
-	9425 1900 9425 1650
-Connection ~ 9425 1650
-Wire Wire Line
-	8675 1650 9000 1650
-Wire Wire Line
-	8675 1325 8675 1650
-Wire Wire Line
-	8675 1325 9675 1325
-Wire Wire Line
-	9675 1325 9675 1450
-Wire Wire Line
-	8425 1300 9275 1300
-Wire Wire Line
-	9275 1300 9275 1325
-Connection ~ 9275 1325
+	8700 1450 8975 1450
 $EndSCHEMATC
